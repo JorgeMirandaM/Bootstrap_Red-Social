@@ -102,7 +102,7 @@ header .menu .active:hover {
 
 
 /* Botones  */
-header .botones a{
+header .botones a {
     background: var(--input);
     display: inline-flex;
     border-radius: 100px;
@@ -113,19 +113,19 @@ header .botones a{
     margin-left: 7px;
 }
 
-header .botones a:hover{
+header .botones a:hover {
     background: #4b4d4e;
     color: var(--texto);
 }
 
-header .botones .perfil{
+header .botones .perfil {
     height: 40px;
     padding: 0 7px;
     background: none;
     min-width: max-content;
 }
 
-header .botones .perfil img{
+header .botones .perfil img {
     width: 30px;
     height: 30px;
     border-radius: 100px;
@@ -136,7 +136,7 @@ header .botones .perfil img{
 
 /* Aside  */
 
-aside{
+aside {
     height: 100vh;
     overflow: auto;
     padding-top: 60px;
@@ -144,7 +144,7 @@ aside{
 
 /* Aside Enlaces Rapidos  */
 
-.enlaces-rapidos > nav a{
+.enlaces-rapidos>nav a {
     display: flex;
     align-items: center;
     color: var(--blanco);
@@ -153,29 +153,29 @@ aside{
 }
 
 
-.enlaces-rapidos > nav a:hover{
+.enlaces-rapidos>nav a:hover {
     background: var(--input-hover);
 }
 
-.enlaces-rapidos .perfil img{
+.enlaces-rapidos .perfil img {
     width: 30px;
     height: 30px;
     border-radius: 100px;
     margin-right: 10px;
-}   
+}
 
-.enlaces-rapidos .icono{
+.enlaces-rapidos .icono {
     margin-right: 20px;
 }
 
-.enlaces-rapidos .icono svg{
+.enlaces-rapidos .icono svg {
     height: 20px;
     width: 20px;
 }
 
 
 /* Footer  */
-footer{
+footer {
     padding: 40px 0;
 }
 
@@ -197,14 +197,14 @@ footer nav a:hover {
     margin-bottom: 20px;
 }
 
-.contactos .titulo{
+.contactos .titulo {
     font-size: 18px;
     font-weight: bold;
     color: var(--gris-claro);
     margin-bottom: 10px;
 }
 
-.contactos .publicidad{
+.contactos .publicidad {
     display: block;
     max-height: 100px;
     overflow: hidden;
@@ -212,11 +212,11 @@ footer nav a:hover {
     border-radius: 5px;
 }
 
-.contactos .publicidad img{
+.contactos .publicidad img {
     width: 100%;
 }
 
-.contactos nav a{
+.contactos nav a {
     display: flex;
     align-items: center;
     color: var(--blanco);
@@ -224,11 +224,11 @@ footer nav a:hover {
     border-radius: 5px;
 }
 
-.contactos nav a:hover{
+.contactos nav a:hover {
     background: var(--input-hover);
 }
 
-.contactos nav a img{
+.contactos nav a img {
     width: 30px;
     height: 30px;
     border-radius: 100px;
@@ -238,11 +238,12 @@ footer nav a:hover {
 
 /* MAIN  */
 
-main{
+main {
     padding-top: 70px;
 }
 
-main .publicar{
+main .publicar,
+main .publicacion {
     background: var(--fondo-contenido);
     width: 100%;
     border-radius: 5px;
@@ -250,7 +251,7 @@ main .publicar{
     padding: 10px;
 }
 
-main .publicar .formulario{
+main .publicar .formulario {
     display: flex;
 }
 
@@ -263,11 +264,11 @@ main .foto {
     margin-right: 10px
 }
 
-main .foto img{
+main .foto img {
     width: 100%;
 }
 
-main .publicar .formulario input{
+main .publicar .formulario input {
     width: 100%;
     border: none;
     background: var(--input);
@@ -277,7 +278,7 @@ main .publicar .formulario input{
     color: var(--texto);
 }
 
-main .publicar .botones a{
+main .publicar .botones a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -286,30 +287,114 @@ main .publicar .botones a{
     border-radius: 3px;
 }
 
-main .publicar .botones a:hover{
+main .publicar .botones a:hover {
     background: var(--input-hover);
-    color:var(--texto)
+    color: var(--texto)
 }
 
-main .publicar .botones a svg{
+main .publicar .botones a svg {
     margin-right: 7px;
 }
 
 
 
+/* Publicacion */
+main .publicacion .header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+main .publicacion .header .datos {
+    display: flex;
+    flex-direction: column;
+}
+
+main .publicacion .header .datos .nombre {
+    color: var(--blanco);
+}
+
+main .publicacion .header .datos .hora {
+    color: var(--texto);
+    font-size: 14px;
+}
+
+main .publicacion .header .datos .hora:hover {
+    color: var(--texto);
+}
+
+main .publicacion .header .datos a:hover {
+    color: var(--texto);
+    text-decoration: underline;
+}
+
+main .publicacion .body p {
+    margin-bottom: 10px;
+    color: var(--blanco);
+}
+
+main .publicacion .body img {
+    width: 100%;
+}
+
+main .publicacion .comentarios {
+    padding: 10px;
+}
+
+main .publicacion .comentarios .me-gusta svg {
+    margin-right: 10px;
+    color: #e75151;
+}
+
+main .publicacion .comentarios a,
+main .publicacion .comentarios .me-gusta {
+    color: var(--texto);
+}
+
+
+
+main .publicacion .comentarios a:hover {
+    text-decoration: underline;
+    color: var(--texto);
+}
+
+main .publicacion .botones button {
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--texto);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+main .publicacion .botones button:hover {
+    background: #3a3b3c;
+}
+
+main .publicacion .botones button svg {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
 
 /* Dispositivo sm  */
-@media screen and (max-width:576px){}
+@media screen and (max-width:576px) {}
 
 
 /* Dispositivo xs  */
-@media screen and (max-width:320px){}
+@media screen and (max-width:320px) {}
 
 /* Dispositivo sm  */
-@media screen and (max-width:576px){}
+@media screen and (max-width:576px) {}
 
 /* Dispositivo md  */
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
+
     .enlaces-rapidos,
     .contactos {
         display: none;
@@ -317,26 +402,26 @@ main .publicar .botones a svg{
 }
 
 /* Dispositivo lg */
-@media screen and (max-width:992px){
+@media screen and (max-width:992px) {
     header {
-        padding-top:10px ;
+        padding-top: 10px;
     }
 
-    .menu{
+    .menu {
         margin-top: 10px;
     }
 
-    aside,main{
-        padding-top: 130px;
+    .contenido-principal {
+        padding-top: 70px;
     }
 }
 
 /* Dispositivo xl  */
-@media screen and (max-width:1200px){
-    header .menu a{
+@media screen and (max-width:1200px) {
+    header .menu a {
         padding: 10px 20px;
     }
 }
 
 /* Dispositivo xxl  */
-@media screen and (max-width:1400px){}
+@media screen and (max-width:1400px) {}
